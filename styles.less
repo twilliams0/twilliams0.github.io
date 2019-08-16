@@ -6,6 +6,7 @@
 @body-font-color: rgba(151, 136, 151, 1);
 @title-font-color: rgba(73, 72, 80, 1);
 @background-color: rgba(44, 44, 52, 1);
+@script-font: 'Great Vibes', cursive;
 
 
 .body-wrapper {
@@ -16,13 +17,15 @@
     .front-face {
         background: url('images/thomas-william.jpg');
         background-size: cover;
+        filter: grayscale(100%);
 
         .front-face-text {
-            padding: 45vh 0;
-            color: @background-color;
+            padding: 35vh 0;
+            color: @title-font-color;
             text-align: center;
             font-size: 48px;
-            font-family: @title-font-fam;
+            font-family: @script-font;
+            filter: none;
         }
 
     }
