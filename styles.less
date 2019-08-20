@@ -1,11 +1,11 @@
 @font-size-reg: 1.2rem;
 @body-font-fam: 'Montserrat', sans-serif;
 @title-font-fam: 'Merriweather', sans-serif;
-@link-visited: rgba(216, 216, 246, 1);
+@link-visited: rgb(247, 203, 247);
 @link: rgba(177, 143, 207, 1);
-@body-font-color: rgba(151, 136, 151, 1);
+@body-font-color: rgba(73, 72, 80, 1);
 @title-font-color: rgba(73, 72, 80, 1);
-@background-color: rgba(44, 44, 52, 1);
+@background-color: rgb(255, 255, 255);
 @script-font: 'Great Vibes', cursive;
 
 
@@ -35,8 +35,9 @@
     }
 
     .header {
-        border-bottom: 1px solid white;
         padding-top: 20px;
+        position: absolute;
+        background: transparent;
     }
 
     .footer {
@@ -51,8 +52,6 @@
         .header,
         .footer {
             width: 100%;
-            background: lighten(@background-color, 10%);
-
 
             .logo-image {
                 max-width: 150px;
@@ -72,14 +71,14 @@
                     flex-wrap: wrap;
 
                     a {
-                        color: @link;
+                        color: @title-font-color;
 
                         &:visited,
                         &:active,
                         &:hover,
                         &:focus,
                         &:focus-within {
-                            color: @link;
+                            color: lighten(@title-font-color, 10%);
                         }
 
                         li {
@@ -127,12 +126,6 @@
                     border-radius: 800px;
                     height: 500px;
                     margin-top: 5px;
-                }
-
-                img.window-image {
-                    border-radius: 300px 300px 0 0;
-                    width: 100%;
-                    filter: grayscale(100%);
                 }
             }
         }
@@ -203,6 +196,33 @@
                     color: @body-font-color;
                 }
 
+            }
+        }
+    }
+
+    .jason-leung {
+        background: url("images/jason-leung.jpg");
+        background-size: cover;
+        height: 800px;
+        border-radius: 300px 300px 0 0;
+        width: 100%;
+        filter: grayscale(100%);
+    }
+
+    .back-to-top {
+        .btt-button {
+            height: 55px;
+            width: 55px;
+            border-radius: 60px;
+            background: #f09ff0;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+
+            &:before {
+                content: '\f102';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
             }
         }
     }
