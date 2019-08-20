@@ -3,11 +3,13 @@
   padding: 0;
   background: #494850;
 }
+
 .body-wrapper .front-face {
   background: url('images/thomas-william.jpg');
   background-size: cover;
   filter: grayscale(100%);
 }
+
 .body-wrapper .front-face .front-face-text {
   padding: 35vh 0;
   color: #494850;
@@ -16,28 +18,34 @@
   font-family: 'Great Vibes', cursive;
   filter: none;
 }
+
 .body-wrapper .interactive-area {
   padding: 0;
 }
+
 .body-wrapper .header {
   padding-top: 20px;
   position: absolute;
   background: transparent;
 }
+
 .body-wrapper .footer {
   border-top: 1px solid white;
   padding-bottom: 20px;
 }
+
 .body-wrapper .header-wrapper,
 .body-wrapper .footer-wrapper {
   margin: 0 auto;
 }
+
 .body-wrapper .header-wrapper .header,
 .body-wrapper .footer-wrapper .header,
 .body-wrapper .header-wrapper .footer,
 .body-wrapper .footer-wrapper .footer {
   width: 100%;
 }
+
 .body-wrapper .header-wrapper .header .logo-image,
 .body-wrapper .footer-wrapper .header .logo-image,
 .body-wrapper .header-wrapper .footer .logo-image,
@@ -45,12 +53,14 @@
   max-width: 150px;
   margin: 25px auto;
 }
+
 .body-wrapper .header-wrapper .header .logo-image img.logo,
 .body-wrapper .footer-wrapper .header .logo-image img.logo,
 .body-wrapper .header-wrapper .footer .logo-image img.logo,
 .body-wrapper .footer-wrapper .footer .logo-image img.logo {
   width: 100%;
 }
+
 .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts,
 .body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts,
 .body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts,
@@ -61,12 +71,14 @@
   padding: 0 20px;
   flex-wrap: wrap;
 }
+
 .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a,
 .body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a,
 .body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a,
 .body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a {
   color: #494850;
 }
+
 .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:visited,
 .body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a:visited,
 .body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a:visited,
@@ -89,6 +101,7 @@
 .body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a:focus-within {
   color: #61606b;
 }
+
 .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a li,
 .body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a li,
 .body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a li,
@@ -97,12 +110,14 @@
   font-family: 'Merriweather', sans-serif;
   font-size: 1.2rem;
 }
+
 .body-wrapper .content-wrapper {
   max-width: 1125px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
 }
+
 .body-wrapper .content-wrapper .section {
   font-size: 1.2rem;
   line-height: 2.1rem;
@@ -113,22 +128,27 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .body-wrapper .content-wrapper .section div {
   width: 45%;
   margin: 40px 20px;
 }
+
 .body-wrapper .content-wrapper .section .experience {
   padding: 25vh 0;
 }
+
 .body-wrapper .content-wrapper .section .content-image-wrapper img.content-image {
   width: 100%;
   border-radius: 800px;
   height: 500px;
   margin-top: 5px;
 }
+
 .body-wrapper .content-wrapper .section.button-section {
   padding: 50px 0;
 }
+
 .body-wrapper .content-wrapper .section.button-section .button-wrapper {
   margin: 0 auto;
   background: #f7cbf7;
@@ -140,9 +160,11 @@
   color: #ffffff;
   text-decoration: none;
 }
+
 .body-wrapper .content-wrapper .section.button-section .button-wrapper:hover {
   background: #f09ff0;
 }
+
 .body-wrapper .intermission {
   padding: 50px 0;
   border-top: 1px solid #494850;
@@ -150,6 +172,7 @@
   background: url("images/birds.jpg");
   background-position-y: 240px;
 }
+
 .body-wrapper .intermission .aside.info {
   max-width: 500px;
   margin: 0 auto;
@@ -158,9 +181,11 @@
   font-family: 'Merriweather', sans-serif;
   color: #61606b;
 }
+
 .body-wrapper .full-height {
   background: url("images/annie-spratt.jpg") 30% 20%;
 }
+
 .body-wrapper .full-height .fade-in {
   max-width: 500px;
   margin: 0 auto;
@@ -170,17 +195,20 @@
   padding: 45vh 0;
   text-align: center;
 }
+
 .body-wrapper .footer-wrapper .shortcut-wrapper .shortcuts {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .body-wrapper .footer-wrapper .shortcut-wrapper .shortcuts li {
   list-style: none;
   font-family: 'Merriweather', sans-serif;
   font-size: 1.2rem;
   color: #494850;
 }
+
 .body-wrapper .jason-leung {
   background: url("images/jason-leung.jpg");
   background-size: cover;
@@ -189,6 +217,7 @@
   width: 100%;
   filter: grayscale(100%);
 }
+
 .body-wrapper .back-to-top .btt-button {
   height: 55px;
   width: 55px;
@@ -198,56 +227,70 @@
   bottom: 50px;
   right: 50px;
 }
+
 .body-wrapper .back-to-top .btt-button:before {
   content: '\f102';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
+
 @media (max-width: 840px) {
   .body-wrapper .content-wrapper .section .experience {
     padding: 0;
   }
+
   .body-wrapper .content-wrapper .section .text {
     width: 100%;
     margin: 20px;
   }
+
   .body-wrapper .content-wrapper .section .content-image-wrapper {
     width: 100%;
   }
+
   .body-wrapper .mobile-none {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .body-wrapper .content-wrapper .section div {
     margin: 20px 20px;
   }
 }
+
 @media (max-width: 767px) {
   .body-wrapper .header {
     padding: 0;
   }
+
   .body-wrapper .content-wrapper {
     padding: 0 20px;
   }
+
   .body-wrapper .content-wrapper .button-section .button {
     padding: 10px 0;
   }
+
   .body-wrapper .content-wrapper .section .text {
     margin: 0;
   }
+
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts {
     flex-direction: column;
     text-align: center;
     margin: 0;
     padding: 0;
   }
+
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a {
     color: #ffffff;
   }
+
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:hover {
     background: #313035;
   }
+
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:visited,
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:active,
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:hover,
@@ -255,16 +298,19 @@
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:focus-within {
     color: #ffffff;
   }
+
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a li {
     padding: 10px 0;
     border-bottom: 1px solid #ffffff;
     background: #494850;
     text-decoration: none;
   }
+
   .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a li:hover {
     background: #313035;
   }
 }
+
 @media (max-width: 430px) {
   .body-wrapper .content-wrapper .introduction div {
     margin: 20px 10px;
