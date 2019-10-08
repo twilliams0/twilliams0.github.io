@@ -59,7 +59,7 @@ body {
   background: url("images/hero.jpeg");
   height: 50vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
 }
 .body-wrapper .image.full-width .slogan {
   color: white;
@@ -196,6 +196,10 @@ body {
 }
 .body-wrapper .back-to-top .btt-button i {
   color: #002878;
+}
+.about-us.content-page .blue iframe {
+  margin: 0 auto;
+  padding: 40px 0;
 }
 .content-page .page-title-container {
   background: #002878;
