@@ -1,318 +1,160 @@
-.body-wrapper {
+body {
   margin: 0;
-  padding: 0;
-  background: #494850;
 }
-
-.body-wrapper .front-face {
-  background: url('images/thomas-william.jpg');
-  background-size: cover;
-  filter: grayscale(100%);
-}
-
-.body-wrapper .front-face .front-face-text {
-  padding: 35vh 0;
-  color: #494850;
-  text-align: center;
-  font-size: 48px;
-  font-family: 'Great Vibes', cursive;
-  filter: none;
-}
-
-.body-wrapper .interactive-area {
-  padding: 0;
-}
-
-.body-wrapper .header {
-  padding-top: 20px;
-  position: absolute;
-  background: transparent;
-}
-
-.body-wrapper .footer {
-  border-top: 1px solid white;
-  padding-bottom: 20px;
-}
-
-.body-wrapper .header-wrapper,
-.body-wrapper .footer-wrapper {
-  margin: 0 auto;
-}
-
-.body-wrapper .header-wrapper .header,
-.body-wrapper .footer-wrapper .header,
-.body-wrapper .header-wrapper .footer,
-.body-wrapper .footer-wrapper .footer {
-  width: 100%;
-}
-
-.body-wrapper .header-wrapper .header .logo-image,
-.body-wrapper .footer-wrapper .header .logo-image,
-.body-wrapper .header-wrapper .footer .logo-image,
-.body-wrapper .footer-wrapper .footer .logo-image {
-  max-width: 150px;
-  margin: 25px auto;
-}
-
-.body-wrapper .header-wrapper .header .logo-image img.logo,
-.body-wrapper .footer-wrapper .header .logo-image img.logo,
-.body-wrapper .header-wrapper .footer .logo-image img.logo,
-.body-wrapper .footer-wrapper .footer .logo-image img.logo {
-  width: 100%;
-}
-
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts {
+.header.top {
+  padding: 10px 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0 20px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #002878;
+  color: #fff;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 40px;
 }
-
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a {
-  color: #494850;
+.body-wrapper .logo {
+  width: 175px;
 }
-
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:visited,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a:visited,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a:visited,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a:visited,
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:active,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a:active,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a:active,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a:active,
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:hover,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a:hover,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a:hover,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a:hover,
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:focus,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a:focus,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a:focus,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a:focus,
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:focus-within,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a:focus-within,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a:focus-within,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a:focus-within {
-  color: #61606b;
+.body-wrapper .header-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 40px;
 }
-
-.body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a li,
-.body-wrapper .footer-wrapper .header .shortcut-wrapper .shortcuts a li,
-.body-wrapper .header-wrapper .footer .shortcut-wrapper .shortcuts a li,
-.body-wrapper .footer-wrapper .footer .shortcut-wrapper .shortcuts a li {
+.body-wrapper .header-wrapper .logo-wrapper {
+  width: 20%;
+}
+.body-wrapper .header-wrapper .shortcut-wrapper {
+  width: 80%;
+  margin: auto 0;
+}
+.body-wrapper .header-wrapper .shortcut-wrapper .shortcuts {
+  display: flex;
   list-style: none;
-  font-family: 'Merriweather', sans-serif;
-  font-size: 1.2rem;
+  justify-content: flex-end;
 }
-
-.body-wrapper .content-wrapper {
-  max-width: 1125px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
+.body-wrapper .header-wrapper .shortcut-wrapper .shortcuts a {
+  color: #002878;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
-
-.body-wrapper .content-wrapper .section {
-  font-size: 1.2rem;
-  line-height: 2.1rem;
-  font-weight: 300;
-  color: #494850;
-  font-family: 'Montserrat', sans-serif;
+.body-wrapper .header-wrapper .shortcut-wrapper .shortcuts a:hover {
+  background-color: #002878;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px 0 10px 0;
+}
+.body-wrapper .header-wrapper .shortcut-wrapper .shortcuts a:not(:last-of-type) {
+  margin-right: 40px;
+}
+.body-wrapper .image.full-width {
+  background: url("images/hero.jpeg");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+.body-wrapper .image.full-width .slogan {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20vh;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 2px;
+}
+.body-wrapper .list-of-services {
+  padding: 40px 0;
+}
+.body-wrapper .list-of-services .our-services {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+.body-wrapper .list-of-services .tri-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 0;
 }
-
-.body-wrapper .content-wrapper .section div {
-  width: 45%;
-  margin: 40px 20px;
-}
-
-.body-wrapper .content-wrapper .section .experience {
-  padding: 25vh 0;
-}
-
-.body-wrapper .content-wrapper .section .content-image-wrapper img.content-image {
-  width: 100%;
-  border-radius: 800px;
-  height: 500px;
-  margin-top: 5px;
-}
-
-.body-wrapper .content-wrapper .section.button-section {
-  padding: 50px 0;
-}
-
-.body-wrapper .content-wrapper .section.button-section .button-wrapper {
-  margin: 0 auto;
-  background: #f7cbf7;
-  padding: 0px 60px;
-  border-radius: 90px;
-  font-size: 18px;
-  line-height: 0px;
-  font-weight: 600;
-  color: #ffffff;
+.body-wrapper .list-of-services .tri-list .card {
   text-decoration: none;
 }
-
-.body-wrapper .content-wrapper .section.button-section .button-wrapper:hover {
-  background: #f09ff0;
+.body-wrapper .list-of-services .tri-list .card .icon-title {
+  display: flex;
+  flex-direction: column;
 }
-
-.body-wrapper .intermission {
-  padding: 50px 0;
-  border-top: 1px solid #494850;
-  border-bottom: 1px solid #494850;
-  background: url("images/birds.jpg");
-  background-position-y: 240px;
-}
-
-.body-wrapper .intermission .aside.info {
-  max-width: 500px;
-  margin: 0 auto;
+.body-wrapper .list-of-services .tri-list .card .icon-title .material-icons {
   text-align: center;
-  font-size: 18px;
-  font-family: 'Merriweather', sans-serif;
-  color: #61606b;
+  font-size: 50px;
 }
-
-.body-wrapper .full-height {
-  background: url("images/annie-spratt.jpg") 30% 20%;
+.body-wrapper .list-of-services .tri-list .card .icon-title .title {
+  font-size: 26px;
+  text-decoration: none;
+  color: #002878;
 }
-
-.body-wrapper .full-height .fade-in {
-  max-width: 500px;
-  margin: 0 auto;
+.body-wrapper .button-wrapper {
+  background-color: #002878;
+  text-align: center;
+  display: flex;
+}
+.body-wrapper .button-wrapper .button {
   color: white;
-  font-size: 16px;
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  padding: 45vh 0;
-  text-align: center;
+  margin: 25px auto;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+  background-color: #494850;
+  background-image: linear-gradient(#494850, #61606b);
 }
-
-.body-wrapper .footer-wrapper .shortcut-wrapper .shortcuts {
+.body-wrapper .button-wrapper .button:hover {
+  background-color: #313035;
+  background-image: linear-gradient(#494850, #313035);
+}
+.body-wrapper .content-wrapper {
+  padding: 0 40px;
+}
+.body-wrapper .content-wrapper .text {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3rem;
+}
+.body-wrapper .content-wrapper .home-text {
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.body-wrapper .footer-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #494850;
+  background-image: linear-gradient(#494850, #61606b);
 }
-
-.body-wrapper .footer-wrapper .shortcut-wrapper .shortcuts li {
-  list-style: none;
-  font-family: 'Merriweather', sans-serif;
-  font-size: 1.2rem;
-  color: #494850;
+.body-wrapper .footer-wrapper .logo {
+  padding: 10px 0;
 }
-
-.body-wrapper .jason-leung {
-  background: url("images/jason-leung.jpg");
-  background-size: cover;
-  height: 800px;
-  border-radius: 300px 300px 0 0;
-  width: 100%;
-  filter: grayscale(100%);
+.body-wrapper .footer-wrapper .shortcuts {
+  position: relative;
+  margin: auto 0;
 }
-
-.body-wrapper .back-to-top .btt-button {
-  height: 55px;
-  width: 55px;
-  border-radius: 60px;
-  background: #f09ff0;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
+.body-wrapper .footer-wrapper .shortcuts .copyright {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.body-wrapper .back-to-top .btt-button:before {
-  content: '\f102';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
+.body-wrapper .footer-wrapper .shortcuts a {
+  position: relative;
+  bottom: 0;
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
 }
-
-@media (max-width: 840px) {
-  .body-wrapper .content-wrapper .section .experience {
-    padding: 0;
-  }
-
-  .body-wrapper .content-wrapper .section .text {
-    width: 100%;
-    margin: 20px;
-  }
-
-  .body-wrapper .content-wrapper .section .content-image-wrapper {
-    width: 100%;
-  }
-
-  .body-wrapper .mobile-none {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .body-wrapper .content-wrapper .section div {
-    margin: 20px 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .body-wrapper .header {
-    padding: 0;
-  }
-
-  .body-wrapper .content-wrapper {
-    padding: 0 20px;
-  }
-
-  .body-wrapper .content-wrapper .button-section .button {
-    padding: 10px 0;
-  }
-
-  .body-wrapper .content-wrapper .section .text {
-    margin: 0;
-  }
-
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts {
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a {
-    color: #ffffff;
-  }
-
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:hover {
-    background: #313035;
-  }
-
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:visited,
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:active,
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:hover,
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:focus,
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a:focus-within {
-    color: #ffffff;
-  }
-
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ffffff;
-    background: #494850;
-    text-decoration: none;
-  }
-
-  .body-wrapper .header-wrapper .header .shortcut-wrapper .shortcuts a li:hover {
-    background: #313035;
-  }
-}
-
-@media (max-width: 430px) {
-  .body-wrapper .content-wrapper .introduction div {
-    margin: 20px 10px;
-  }
+.body-wrapper .footer-wrapper .shortcuts a:hover {
+  color: #002878;
 }
