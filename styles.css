@@ -12,6 +12,11 @@ body {
   top: 0;
   z-index: 999;
   padding: 10px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+.header.top .phone a {
+  color: white;
+  text-decoration: none;
 }
 .body-wrapper .logo {
   width: 175px;
@@ -104,9 +109,9 @@ body {
   color: white;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  margin: 25px auto;
-  font-size: 18px;
-  font-weight: 500;
+  margin: 40px auto;
+  font-size: 21px;
+  font-weight: 600;
   padding: 15px;
   background-color: #494850;
   background-image: linear-gradient(#494850, #61606b);
@@ -125,7 +130,17 @@ body {
 .body-wrapper .content-wrapper .home-text {
   max-width: 875px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
+}
+.body-wrapper .map-section {
+  background: #002878;
+  padding: 40px 0;
+}
+.body-wrapper .map-section .map-wrapper {
+  display: flex;
+}
+.body-wrapper .map-section .map-wrapper iframe {
+  margin: 0 auto;
 }
 .body-wrapper .footer-wrapper {
   display: flex;
@@ -156,5 +171,16 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .body-wrapper .footer-wrapper .shortcuts a:hover {
+  color: #002878;
+}
+.body-wrapper .back-to-top {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+.body-wrapper .back-to-top .btt-button i {
   color: #002878;
 }
