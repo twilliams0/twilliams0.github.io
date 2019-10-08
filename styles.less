@@ -19,7 +19,6 @@ body{
     justify-content: space-between;
     background: @cpblue;
     color: #fff;
-    margin-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -29,6 +28,9 @@ body{
         a{
             color:white;
             text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -38,7 +40,7 @@ body{
     }
     .header-wrapper{
         display: flex;
-        margin-bottom: 20px;
+        margin: 20px 0;
         padding: 0 40px;
         .logo-wrapper{
             width: 20%;
@@ -56,11 +58,10 @@ body{
                     text-decoration: none;
                     font-family: @link-font-fam;
                     font-size: 18px;
+                    transition: all .2s ease-in-out;
                     &:hover{
-                        background-color: @cpblue;
-                        color: white;
-                        padding: 10px 20px;
-                        border-radius: 10px 0 10px 0;
+                        transform: scale(1.1);
+                        text-decoration: underline;
                     }
                 }
                 a:not(:last-of-type){
@@ -98,7 +99,13 @@ body{
             justify-content: space-evenly;
             padding: 20px 0;
             .card{
+                color: @cpblue;
+                transition: all .2s ease-in-out;
                 text-decoration: none;
+                width: 33%;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 .icon-title{
                     display: flex;
                     flex-direction: column;
@@ -110,6 +117,7 @@ body{
                         text-decoration: none;
                         font-size: 26px;
                         text-decoration: none;
+                        text-align: center;
                         color: @cpblue;
                     }
                 }
@@ -199,10 +207,88 @@ body{
         background: white;
         padding: 10px;
         border-radius: 30px;
+        transition: come-in 1.2s ease forwards;
+        display: none;
+        &:hover{
+            transform: scale(1.1);
+        }
         .btt-button{
             i{
                 color: @cpblue;
+                transition: come-in 1.2s ease forwards;
             }
         }
     }
 }
+
+// content pages
+.content-page{
+    .page-title-container{
+        background: @cpblue;
+        .page-title{
+            color: white;
+            padding: 20px 40px;
+            font-size: 28px;
+            font-family: @title-font-fam;
+
+        }
+    }
+    .content-wrapper{
+        display: flex;
+        justify-content: space-between;
+        img.aside{
+            max-width: 600px;
+            padding: 40px 0;
+            width: 50%;
+        }
+        .text.content-text{
+            width: 50%;
+        }
+    }
+    @media (max-width:1300px){
+        .content-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img.aside{
+                padding: 40px 0;
+                width: 100%;
+            }
+            .text.content-text{
+                width: 100%;
+            }
+        }
+    }
+    .content-wrapper.blue{
+        background: @cpblue;
+        color: white;
+    }
+    .content-text{
+        padding: 40px 0;
+        font-family: @body-font-fam;
+        font-size: 18px;
+        .content-list{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+        }
+    }
+}
+
+//Slide In
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
