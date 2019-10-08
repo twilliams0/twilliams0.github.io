@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .body-wrapper .list-of-services .tri-list .card {
   color: #002878;
@@ -104,6 +104,7 @@ body {
 }
 .body-wrapper .list-of-services .tri-list .card .icon-title .title {
   font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   text-align: center;
   color: #002878;
@@ -188,7 +189,6 @@ body {
   background: white;
   padding: 10px;
   border-radius: 30px;
-  transition: come-in 1.2s ease forwards;
   display: none;
 }
 .body-wrapper .back-to-top:hover {
@@ -196,7 +196,6 @@ body {
 }
 .body-wrapper .back-to-top .btt-button i {
   color: #002878;
-  transition: come-in 1.2s ease forwards;
 }
 .content-page .page-title-container {
   background: #002878;
