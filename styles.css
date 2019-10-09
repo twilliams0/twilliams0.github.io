@@ -55,10 +55,31 @@ body {
 .body-wrapper .header-wrapper .shortcut-wrapper .shortcuts a:not(:last-of-type) {
   margin-right: 40px;
 }
+@media (max-width: 700px) {
+  .body-wrapper .header-wrapper {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .body-wrapper .header-wrapper .logo-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .body-wrapper .header-wrapper .shortcut-wrapper {
+    width: 100%;
+  }
+  .body-wrapper .header-wrapper .shortcut-wrapper .shortcuts {
+    justify-content: space-around;
+    padding: 0;
+  }
+  .body-wrapper .header-wrapper .shortcut-wrapper .shortcuts a {
+    margin-right: 0!important;
+  }
+}
 .body-wrapper .image.full-width {
   background: url("images/hero.jpeg");
   height: 50vh;
   background-attachment: fixed;
+  display: flex;
   background-position: top;
 }
 .body-wrapper .image.full-width .slogan {
@@ -66,7 +87,6 @@ body {
   font-size: 48px;
   text-align: center;
   margin: auto;
-  padding-top: 20vh;
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 2px;
 }
@@ -103,7 +123,7 @@ body {
   font-size: 50px;
 }
 .body-wrapper .list-of-services .tri-list .card .icon-title .title {
-  font-size: 26px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   text-align: center;
@@ -182,6 +202,27 @@ body {
 .body-wrapper .footer-wrapper .shortcuts a:hover {
   color: #002878;
 }
+@media (max-width: 833px) {
+  .body-wrapper .footer-wrapper {
+    flex-wrap: wrap;
+  }
+  .body-wrapper .footer-wrapper .logo {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .body-wrapper .footer-wrapper .logo img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .body-wrapper .footer-wrapper .shortcuts {
+    width: 100%;
+    position: relative;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .body-wrapper .back-to-top {
   position: fixed;
   bottom: 60px;
@@ -201,9 +242,6 @@ body {
   margin: 0 auto;
   padding: 40px 0;
 }
-.about-us.content-page .ac-image-background {
-  background: url("images/ac.jpeg");
-}
 .about-us.content-page .no-padding {
   padding: 0;
 }
@@ -215,7 +253,12 @@ body {
 }
 .about-us.content-page .half-width img {
   width: 100%;
-  max-height: 425px;
+  height: 425px;
+}
+@media (max-width: 769px) {
+  .about-us.content-page .half-width img {
+    display: none;
+  }
 }
 .content-page .active {
   text-decoration: underline!important;
