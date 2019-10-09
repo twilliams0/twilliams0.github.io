@@ -17,6 +17,7 @@ body{
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background: @cpblue;
     color: #fff;
     position: sticky;
@@ -354,10 +355,10 @@ body{
 //Slide In
 .come-in {
     transform: translateY(150px);
-    animation: come-in 0.8s ease forwards;
+    animation: come-in 1s ease forwards;
   }
   .come-in:nth-child(odd) {
-    animation-duration: 0.6s; /* So they look staggered */
+    animation-duration: 0.8s; /* So they look staggered */
   }
   
   @keyframes come-in {

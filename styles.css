@@ -5,6 +5,7 @@ body {
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background: #002878;
   color: #fff;
   position: sticky;
@@ -318,10 +319,10 @@ body {
 }
 .come-in {
   transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
+  animation: come-in 1s ease forwards;
 }
 .come-in:nth-child(odd) {
-  animation-duration: 0.6s;
+  animation-duration: 0.8s;
   /* So they look staggered */
 }
 @keyframes come-in {
