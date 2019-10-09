@@ -201,6 +201,25 @@ body {
   margin: 0 auto;
   padding: 40px 0;
 }
+.about-us.content-page .ac-image-background {
+  background: url("images/ac.jpeg");
+}
+.about-us.content-page .no-padding {
+  padding: 0;
+}
+.about-us.content-page .wrap {
+  flex-wrap: wrap;
+}
+.about-us.content-page .half-width {
+  width: 50%;
+}
+.about-us.content-page .half-width img {
+  width: 100%;
+  max-height: 425px;
+}
+.content-page .active {
+  text-decoration: underline!important;
+}
 .content-page .page-title-container {
   background: #002878;
 }
