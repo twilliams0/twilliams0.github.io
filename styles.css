@@ -251,10 +251,11 @@ body {
 }
 .about-us.content-page .half-width {
   width: 50%;
+  height: 425px;
 }
 .about-us.content-page .half-width img {
   width: 100%;
-  height: 425px;
+  height: 100%;
 }
 @media (max-width: 769px) {
   .about-us.content-page .half-width img {
