@@ -57,6 +57,9 @@ body {
   margin-right: 40px;
 }
 @media (max-width: 700px) {
+  .body-wrapper.container {
+    margin-bottom: 92px;
+  }
   .body-wrapper .header-wrapper {
     padding: 0;
     flex-wrap: wrap;
@@ -66,14 +69,52 @@ body {
     text-align: center;
   }
   .body-wrapper .header-wrapper .shortcut-wrapper {
+    display: none;
+  }
+  .body-wrapper .list-of-services {
+    display: none;
+  }
+  .body-wrapper .mobile-menu .tri-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    background: white;
     width: 100%;
   }
-  .body-wrapper .header-wrapper .shortcut-wrapper .shortcuts {
-    justify-content: space-around;
-    padding: 0;
+  .body-wrapper .mobile-menu .tri-list .card {
+    color: #002878;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    width: 25%;
   }
-  .body-wrapper .header-wrapper .shortcut-wrapper .shortcuts a {
-    margin-right: 0!important;
+  .body-wrapper .mobile-menu .tri-list .card:hover {
+    transform: scale(1.1);
+  }
+  .body-wrapper .mobile-menu .tri-list .card .icon-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-wrapper .mobile-menu .tri-list .card .icon-title .material-icons {
+    text-align: center;
+    font-size: 50px;
+  }
+  .body-wrapper .mobile-menu .tri-list .card .icon-title .title {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #002878;
+  }
+  .body-wrapper .footer-wrapper {
+    display: none!important;
+  }
+}
+@media (min-width: 701px) {
+  .body-wrapper .mobile-menu {
+    display: none;
   }
 }
 .body-wrapper .image.full-width {
@@ -110,7 +151,7 @@ body {
   color: #002878;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  width: 33%;
+  width: 25%;
 }
 .body-wrapper .list-of-services .tri-list .card:hover {
   transform: scale(1.1);
@@ -164,10 +205,13 @@ body {
 }
 .body-wrapper .map-section {
   background: #002878;
-  padding: 40px 0;
 }
 .body-wrapper .map-section .map-wrapper {
   display: flex;
+}
+.body-wrapper .map-section .map-wrapper .home-map {
+  height: 55vh;
+  width: 100%;
 }
 .body-wrapper .map-section .map-wrapper iframe {
   margin: 0 auto;
@@ -226,7 +270,7 @@ body {
 }
 .body-wrapper .back-to-top {
   position: fixed;
-  bottom: 60px;
+  bottom: 120px;
   right: 20px;
   background: white;
   padding: 10px;
