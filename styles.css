@@ -15,7 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .header.top .phone a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 .header.top .phone a:hover {
@@ -81,7 +81,7 @@ body {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    background: white;
+    background: #ffffff;
     width: 100%;
   }
   .body-wrapper .mobile-menu .tri-list .card {
@@ -119,13 +119,13 @@ body {
 }
 .body-wrapper .image.full-width {
   background: url("images/hero.jpeg");
-  height: 50vh;
+  height: 55vh;
   background-attachment: fixed;
   display: flex;
   background-position: top;
 }
 .body-wrapper .image.full-width .slogan {
-  color: white;
+  color: #ffffff;
   font-size: 48px;
   text-align: center;
   margin: auto;
@@ -177,7 +177,7 @@ body {
   display: flex;
 }
 .body-wrapper .button-wrapper .button {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   margin: 40px auto;
@@ -191,6 +191,9 @@ body {
   background-color: #313035;
   background-image: linear-gradient(#494850, #313035);
 }
+.body-wrapper .home-blurb {
+  background: #002878;
+}
 .body-wrapper .content-wrapper {
   padding: 0 40px;
 }
@@ -202,6 +205,7 @@ body {
   max-width: 875px;
   margin: 0 auto;
   padding: 40px 0;
+  color: #ffffff;
 }
 .body-wrapper .map-section {
   background: #002878;
@@ -221,26 +225,30 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 20px 40px;
   background-color: #494850;
   background-image: linear-gradient(#494850, #61606b);
 }
 .body-wrapper .footer-wrapper .logo {
   padding: 10px 0;
+  width: 30%;
+  color: #ffffff;
 }
 .body-wrapper .footer-wrapper .shortcuts {
   position: relative;
   margin: auto 0;
+  width: 70%;
+  text-align: right;
 }
 .body-wrapper .footer-wrapper .shortcuts .copyright {
-  color: white;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
 .body-wrapper .footer-wrapper .shortcuts a {
   position: relative;
   bottom: 0;
   margin: 0 5px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
 }
@@ -253,7 +261,7 @@ body {
   }
   .body-wrapper .footer-wrapper .logo {
     padding: 10px 0;
-    width: 100%;
+    width: 30%;
     text-align: center;
   }
   .body-wrapper .footer-wrapper .logo img {
@@ -261,8 +269,8 @@ body {
     margin: 0 auto;
   }
   .body-wrapper .footer-wrapper .shortcuts {
-    width: 100%;
     position: relative;
+    width: 70%;
     margin: auto 0;
     display: flex;
     justify-content: space-evenly;
@@ -272,7 +280,7 @@ body {
   position: fixed;
   bottom: 120px;
   right: 20px;
-  background: white;
+  background: #ffffff;
   padding: 10px;
   border-radius: 30px;
   display: none;
@@ -302,6 +310,9 @@ body {
   height: 100%;
 }
 @media (max-width: 769px) {
+  .about-us.content-page .mobile-none {
+    display: none;
+  }
   .about-us.content-page .half-width img {
     display: none;
   }
@@ -313,7 +324,7 @@ body {
   background: #002878;
 }
 .content-page .page-title-container .page-title {
-  color: white;
+  color: #ffffff;
   padding: 20px 40px;
   font-size: 28px;
   font-family: 'Noto Sans JP', sans-serif;
@@ -346,7 +357,7 @@ body {
 }
 .content-page .content-wrapper.blue {
   background: #002878;
-  color: white;
+  color: #ffffff;
 }
 .content-page .content-text {
   padding: 40px 0;

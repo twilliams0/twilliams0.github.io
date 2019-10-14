@@ -9,6 +9,7 @@
 @background-color: rgb(255, 255, 255);
 @script-font: 'Great Vibes', cursive;
 @cpblue: rgba(0, 40, 120, 1);
+@white: rgba(255, 255, 255, 1);
 
 body{
     margin: 0;
@@ -27,7 +28,7 @@ body{
     font-family: @body-font-fam;
     .phone{
         a{
-            color:white;
+            color:@white;
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
@@ -98,7 +99,7 @@ body{
                 padding: 10px 0;
                 position: fixed;
                 bottom: 0;
-                background: white;
+                background: @white;
                 width: 100%;
                 .card{
                     color: @cpblue;
@@ -137,12 +138,12 @@ body{
     }
     .image.full-width{
         background:url("images/hero.jpeg");
-        height: 50vh;
+        height: 55vh;
         background-attachment: fixed;
         display: flex;
         background-position: top;
         .slogan{
-            color: white;
+            color: @white;
             font-size: 48px;
             text-align: center;
             margin: auto;
@@ -194,7 +195,7 @@ body{
         text-align: center;
         display: flex;
         .button{
-            color: white;
+            color: @white;
             text-decoration: none;
             font-family: @body-font-fam;
             margin: 40px auto;
@@ -210,6 +211,9 @@ body{
             }
         }
     }
+    .home-blurb{
+        background: @cpblue;
+    }
     .content-wrapper{
         padding: 0 40px;
         .text{
@@ -221,6 +225,7 @@ body{
             max-width: 875px;
             margin: 0 auto;
             padding: 40px 0;
+            color: @white;
         }
     }
     .map-section{
@@ -241,24 +246,28 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 20px 40px;
     background-color: @body-font-color;
     background-image: linear-gradient(@body-font-color, lighten(@body-font-color, 10%));
     .logo{
         padding: 10px 0;
+        width: 30%;
+        color: @white;
     }
     .shortcuts{
         position: relative;
         margin: auto 0;
+        width: 70%;
+        text-align: right;
         .copyright{
-            color: white;
+            color: @white;
             font-family: @body-font-fam;
         }
         a{ 
             position: relative;
             bottom: 0;
             margin: 0 5px;
-            color: white;
+            color: @white;
             text-decoration: none;
             font-family: @link-font-fam;
             &:hover{
@@ -273,7 +282,7 @@ body{
             flex-wrap: wrap;
             .logo{
                 padding: 10px 0;
-                width: 100%;
+                width: 30%;
                 text-align: center;
                 img{
                     max-width: 250px;
@@ -281,8 +290,8 @@ body{
                 }
             }
             .shortcuts{
-                width: 100%;
                 position: relative;
+                width: 70%;
                 margin: auto 0;
                 display: flex;
                 justify-content: space-evenly;
@@ -293,7 +302,7 @@ body{
         position: fixed;
         bottom: 120px;
         right: 20px;
-        background: white;
+        background: @white;
         padding: 10px;
         border-radius: 30px;
         display: none;
@@ -331,6 +340,9 @@ body{
         }
     }
     @media (max-width:769px){
+        .mobile-none{
+            display: none;
+        }
         .half-width{
             img{
                 display: none;
@@ -346,7 +358,7 @@ body{
     .page-title-container{
         background: @cpblue;
         .page-title{
-            color: white;
+            color: @white;
             padding: 20px 40px;
             font-size: 28px;
             font-family: @title-font-fam;
@@ -381,7 +393,7 @@ body{
     }
     .content-wrapper.blue{
         background: @cpblue;
-        color: white;
+        color: @white;
     }
     .content-text{
         padding: 40px 0;
