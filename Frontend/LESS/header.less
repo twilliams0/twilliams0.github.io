@@ -1,0 +1,57 @@
+.header.top{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: @cpblue;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 40px;
+    font-family: @body-font-fam;
+    .phone{
+        a{
+            color:@white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.logo{
+    width: 175px;
+}
+.header-wrapper{
+    display: flex;
+    margin: 20px 0;
+    padding: 0 40px;
+    .logo-wrapper{
+        width: 20%;
+    }
+    .shortcut-wrapper{
+        width: 80%;
+        margin: auto 0;
+        .shortcuts{
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            a{
+                color: @cpblue;
+                position: relative;
+                text-decoration: none;
+                font-family: @link-font-fam;
+                font-size: 18px;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                    text-decoration: underline;
+                }
+            }
+            a:not(:last-of-type){
+                margin-right: 40px
+            }
+        }
+    }
+}

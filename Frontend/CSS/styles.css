@@ -1,0 +1,334 @@
+.header.top {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #002878;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+.header.top .phone a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header.top .phone a:hover {
+  text-decoration: underline;
+}
+.logo {
+  width: 175px;
+}
+.header-wrapper {
+  display: flex;
+  margin: 20px 0;
+  padding: 0 40px;
+}
+.header-wrapper .logo-wrapper {
+  width: 20%;
+}
+.header-wrapper .shortcut-wrapper {
+  width: 80%;
+  margin: auto 0;
+}
+.header-wrapper .shortcut-wrapper .shortcuts {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.header-wrapper .shortcut-wrapper .shortcuts a {
+  color: #002878;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.header-wrapper .shortcut-wrapper .shortcuts a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+.header-wrapper .shortcut-wrapper .shortcuts a:not(:last-of-type) {
+  margin-right: 40px;
+}
+.list-of-services {
+  padding: 40px 0;
+}
+.tri-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+.card {
+  color: #002878;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  width: 25%;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.icon-title {
+  display: flex;
+  flex-direction: column;
+}
+.icon-title .material-icons {
+  text-align: center;
+  font-size: 50px;
+}
+.title {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: #002878;
+}
+.image.full-width {
+  background: url("../../images/hero.jpeg");
+  height: 55vh;
+  background-attachment: fixed;
+  display: flex;
+  background-position: top;
+}
+.slogan {
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  margin: auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 2px;
+}
+.home-blurb {
+  background: #002878;
+}
+.content-wrapper {
+  padding: 0 40px;
+}
+.text {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3rem;
+}
+.home-text {
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #ffffff;
+}
+.map-section {
+  background: #002878;
+  z-index: 999;
+}
+.map-wrapper {
+  display: flex;
+}
+.home-map {
+  height: 55vh;
+  width: 100%;
+}
+iframe {
+  margin: 0 auto;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #494850;
+  background-image: linear-gradient(#494850, #61606b);
+}
+@media (max-width: 800px) {
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+}
+.shortcuts {
+  position: relative;
+  margin: auto 0;
+  width: 70%;
+  text-align: right;
+}
+@media (max-width: 800px) {
+  .shortcuts {
+    position: relative;
+    width: 70%;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.shortcuts a {
+  position: relative;
+  bottom: 0;
+  margin: 0 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+.shortcuts a:hover {
+  color: #002878;
+}
+.copyright {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer-wrapper .logo {
+  padding: 10px 0;
+  width: 30%;
+  color: #ffffff;
+}
+@media (max-width: 800px) {
+  .footer-wrapper .logo {
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 30%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .footer-wrapper .logo img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+.back-to-top {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 30px;
+  z-index: 999;
+}
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+.btt-button i {
+  color: #002878;
+}
+.button-wrapper {
+  background-color: #002878;
+  text-align: center;
+  display: flex;
+}
+.button {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px auto;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 15px;
+  background-color: #494850;
+  background-image: linear-gradient(#494850, #61606b);
+}
+.button:hover {
+  background-color: #313035;
+  background-image: linear-gradient(#494850, #313035);
+}
+body {
+  margin: 0;
+}
+.blue iframe {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.no-padding {
+  padding: 0;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.half-width {
+  width: 50%;
+  height: 425px;
+}
+.half-width img {
+  width: 100%;
+  height: 100%;
+}
+.active {
+  text-decoration: underline!important;
+}
+.page-title-container {
+  background: #002878;
+}
+.page-title-container .page-title {
+  color: #ffffff;
+  padding: 20px 40px;
+  font-size: 28px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.content-wrapper img.aside {
+  max-width: 600px;
+  padding: 40px 0;
+  width: 50%;
+}
+@media (max-width: 1280px) {
+  .content-wrapper img.aside {
+    padding: 40px 0;
+    width: 100%;
+  }
+}
+.content-wrapper .text.content-text {
+  width: 50%;
+}
+.content-wrapper.blue {
+  background: #002878;
+  color: #ffffff;
+}
+.content-text {
+  padding: 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+.content-text .content-list {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 1280px) {
+  .text.content-text {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-none {
+    display: none;
+  }
+  .half-width img {
+    display: none;
+  }
+}
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.8s;
+  /* So they look staggered */
+}
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=../../Frontend/LESS/_styles.css.map */

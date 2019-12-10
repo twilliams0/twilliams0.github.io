@@ -5,7 +5,7 @@
     <title>C&P Equipment Repair</title>
     <meta name="description" content="Testing Zone" charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="frontend/css/styles.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Noto+Sans+JP&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,13 +13,12 @@
 </head>
 
 <body class="body-wrapper container home index">
-    <a name="top"></a>
-    <div id="top" class="header top">
+    <div class="header top">
         <span class="phone"><a name="Phone Number" href="tel:205-366-1043">Contact Us: (205) 366-1043</a></span>
         <span class="hours">Our Hours:  7AM-4PM  Mon-Fri</span>
     </div>
     <div class="body-wrapper">
-        <div class="header-wrapper">
+        <div class="header-wrapper" id="top">
             <div class="logo-wrapper">
                 <a name="Logo/Link to Home Page" href="index.html"><img src="images/logo.jpg" class="logo" alt="logo" /></a>
             </div>
@@ -31,7 +30,7 @@
                     <a name="Commercial Services" href="commercial.html">
                         <span>Commercial Services</span>
                     </a>
-                    <a name="What We Offer" href="ourservices.html">
+                    <a name="What We Offer" href="what-we-offer.html">
                         <span>What We Offer</span>
                     </a>
                 </div>
@@ -44,7 +43,7 @@
             <div class="tri-list">
                 <a name="About Us Card" href="aboutus.html" class="card">
                     <div class="icon-title">
-                            <i class="material-icons">
+                        <i class="material-icons">
                                     directions_car
                                     </i>
                         <span class="title">About Us</span>
@@ -52,124 +51,61 @@
                 </a>
                 <a name="Commercial Services Card" href="commercial.html" class="card">
                     <div class="icon-title">
-                            <i class="material-icons">
+                        <i class="material-icons">
                                     airport_shuttle
                                     </i>
                         <span class="title">Commercial Services</span>
                     </div>
                 </a>
-                <a href="ourservices.html" class="What We Offer card">
+                <a href="what-we-offer.html" class="What We Offer card">
                     <div class="icon-title">
-                            <i class="material-icons">
+                        <i class="material-icons">
                                     assignment
                                     </i>
                         <span class="title">What We Offer</span>
                     </div>
                 </a>
-                <a href="#" class="schedule card" name="Schedule">
-                    <div class="icon-title">
-                            <i class="material-icons">
-                                    bookmark
-                                    </i>
-                        <span class="title">Schedule</span>
-                    </div>
-                </a>
             </div>
         </div>
         <div class="content-wrapper home-blurb normal-width module">
-                <div class="text home-text">Vivamus elementum feugiat lectus, ut sollicitudin ante bibendum ut. Mauris ac
-                    massa eget metus ultricies
-                    pharetra
-                    eget non massa. Maecenas id vulputate lectus. Praesent varius rhoncus arcu tempor porta. Fusce
-                    diam
-                    enim,
-                    condimentum ac auctor ac, suscipit eu quam. Morbi rhoncus sem ac tellus bibendum, ut malesuada
-                    tortor
-                    tempor.
-                    Phasellus efficitur, purus sit amet pellentesque ullamcorper, erat nisl porttitor mi, a pulvinar
-                    justo
-                    sapien sed
-                    diam. Aenean purus velit, volutpat sed nulla sed, dapibus sollicitudin ipsum. Proin quis euismod
-                    leo.
-                    Vestibulum at
-                    sollicitudin leo. Pellentesque sapien enim, semper non imperdiet ut, venenatis sed lacus.
-                    Pellentesque
-                    in
-                    odio eget
-                    lacus feugiat hendrerit. Integer posuere, orci sed imperdiet rutrum, ligula urna volutpat augue,
-                    at
-                    semper
-                    tellus
-                    eros a nisl.
-                </div>
+            <div class="text home-text">Vivamus elementum feugiat lectus, ut sollicitudin ante bibendum ut. Mauris ac massa eget metus ultricies pharetra eget non massa. Maecenas id vulputate lectus. Praesent varius rhoncus arcu tempor porta. Fusce diam enim, condimentum ac auctor
+                ac, suscipit eu quam. Morbi rhoncus sem ac tellus bibendum, ut malesuada tortor tempor. Phasellus efficitur, purus sit amet pellentesque ullamcorper, erat nisl porttitor mi, a pulvinar justo sapien sed diam. Aenean purus velit, volutpat
+                sed nulla sed, dapibus sollicitudin ipsum. Proin quis euismod leo. Vestibulum at sollicitudin leo. Pellentesque sapien enim, semper non imperdiet ut, venenatis sed lacus. Pellentesque in odio eget lacus feugiat hendrerit. Integer posuere,
+                orci sed imperdiet rutrum, ligula urna volutpat augue, at semper tellus eros a nisl.
             </div>
         </div>
-        <div class="map-section module">
-            <div class="map-wrapper">
-                    <iframe title="Our Location" class="module home-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13345.4025319598!2d-87.5443038!3d33.2573117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22908dd583424cab!2sC%20%26%20P%20Equipment%20Repair%20LLC!5e0!3m2!1sen!2sus!4v1570543934959!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
+    </div>
+    <div class="map-section module">
+        <div class="map-wrapper">
+            <iframe title="Our Location" class="module home-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13345.4025319598!2d-87.5443038!3d33.2573117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22908dd583424cab!2sC%20%26%20P%20Equipment%20Repair%20LLC!5e0!3m2!1sen!2sus!4v1570543934959!5m2!1sen!2sus"
+                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="footer-wrapper module" id="rsvp">
-            <div class="logo">
-                <span class="copyright">&copy;C&P Equipment Repair</span>
-            </div>
-            <div class="shortcuts">
-                    <a name="About Us" href="aboutus.html">
+    </div>
+    <div class="footer-wrapper module" id="rsvp">
+        <div class="logo">
+            <span class="copyright">&copy;C&P Equipment Repair</span>
+        </div>
+        <div class="shortcuts">
+            <a name="About Us" href="aboutus.html">
                         About Us
                     </a>
-                    <a name="Commercial Services" href="commercial.html">
+            <a name="Commercial Services" href="commercial.html">
                         Commercial Services
                     </a>
-                    <a name="What We Offer" href="ourservices.html">
+            <a name="What We Offer" href="what-we-offer.html">
                         What We Offer
                     </a>
-            </div>
         </div>
+    </div>
+    <div class="back-to-top">
         <a name="Back to Top" href="#top">
-            <div class="back-to-top">
-                <div class="btt-button">
-                    <i class="material-icons">
+            <div class="btt-button">
+                <i class="material-icons">
                         vertical_align_top
                     </i>
-                </div>
             </div>
         </a>
-        <div class="mobile-menu">
-            <div class="tri-list">
-                <a name="About Us Card" href="aboutus.html" class="card">
-                    <div class="icon-title">
-                            <i class="material-icons">
-                                    directions_car
-                                    </i>
-                        <span class="title">About</span>
-                    </div>
-                </a>
-                <a name="Commercial Services Card" href="commercial.html" class="card">
-                    <div class="icon-title">
-                            <i class="material-icons">
-                                    airport_shuttle
-                                    </i>
-                        <span class="title">Commercial</span>
-                    </div>
-                </a>
-                <a href="ourservices.html" class="What We Offer card" name="Our Services">
-                    <div class="icon-title">
-                            <i class="material-icons">
-                                    assignment
-                                    </i>
-                        <span class="title">Services</span>
-                    </div>
-                </a>
-                <a href="#" class="schedule card" name="Schedule">
-                    <div class="icon-title">
-                            <i class="material-icons">
-                                    bookmark
-                                    </i>
-                        <span class="title">Schedule</span>
-                    </div>
-                </a>
-            </div>
-        </div>
+    </div>
 </body>
 
 </html>
