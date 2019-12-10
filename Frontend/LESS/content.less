@@ -51,7 +51,9 @@ body{
     }
 }
 .content-wrapper .text.content-text{
+    @media (min-width: @Marge){
     width: 50%;
+    }
 }
 
 .content-wrapper.blue{
@@ -78,7 +80,7 @@ body{
         width: 100%;
     }
 }
-@media (min-width: @Bart){
+@media (max-width: @Bart){
     .mobile-none{
         display: none;
     }

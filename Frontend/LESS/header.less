@@ -10,14 +10,12 @@
     z-index: 999;
     padding: 10px 40px;
     font-family: @body-font-fam;
-    .phone{
-        a{
-            color:@white;
-            text-decoration: none;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
+}
+.header.top .phone a{
+    color:@white;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
     }
 }
 .logo{
@@ -27,31 +25,39 @@
     display: flex;
     margin: 20px 0;
     padding: 0 40px;
-    .logo-wrapper{
-        width: 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: @Lisa){
+        justify-content: center;
     }
-    .shortcut-wrapper{
-        width: 80%;
-        margin: auto 0;
-        .shortcuts{
-            display: flex;
-            list-style: none;
-            justify-content: flex-end;
-            a{
-                color: @cpblue;
-                position: relative;
-                text-decoration: none;
-                font-family: @link-font-fam;
-                font-size: 18px;
-                transition: all .2s ease-in-out;
-                &:hover{
-                    transform: scale(1.1);
-                    text-decoration: underline;
-                }
-            }
-            a:not(:last-of-type){
-                margin-right: 40px
-            }
+}
+.shortcut-wrapper{
+    margin: auto 0;
+}
+.shortcut-wrapper .shortcuts a{
+    color: @cpblue;
+    position: relative;
+    text-decoration: none;
+    font-family: @link-font-fam;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+    padding: 10px 0;
+    &:hover{
+        transform: scale(1.1);
+        text-decoration: underline;
+    }
+    @media (min-width: @Lisa){
+        &:not(:last-of-type){
+            margin: 0 40px 0 0;
+        }
+        &:last-of-type{
+            margin: 0
         }
     }
+}
+.shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
