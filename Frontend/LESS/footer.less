@@ -10,14 +10,13 @@
         flex-wrap: wrap;
     }
 }
-.shortcuts{
+.footer-wrapper .shortcuts{
     position: relative;
     margin: auto 0;
-    width: 70%;
+    width: auto;
     text-align: right;
     @media (max-width: @Marge){
         position: relative;
-        width: 70%;
         margin: auto 0;
         display: flex;
         justify-content: space-evenly;
@@ -40,12 +39,11 @@
 }
 .footer-wrapper .logo{
     padding: 10px 0;
-    width: 30%;
+    width: auto;
     color: @white;
     @media (max-width: @Marge){
         flex-wrap: wrap;
         padding: 10px 0;
-        width: 30%;
         text-align: center;
     }
 }
@@ -54,4 +52,11 @@
         max-width: 250px;
         margin: 0 auto;
     }
+}
+@media (max-width: @Lisa){
+    .footer-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
 }
