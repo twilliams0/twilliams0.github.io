@@ -215,32 +215,13 @@ iframe {
   padding: 10px;
   border-radius: 30px;
   z-index: 999;
+  border: 1px solid #494850;
 }
 .back-to-top:hover {
   transform: scale(1.1);
 }
 .btt-button i {
   color: #002878;
-}
-.button-wrapper {
-  background-color: #002878;
-  text-align: center;
-  display: flex;
-}
-.button {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  margin: 40px auto;
-  font-size: 21px;
-  font-weight: 600;
-  padding: 15px;
-  background-color: #494850;
-  background-image: linear-gradient(#494850, #61606b);
-}
-.button:hover {
-  background-color: #313035;
-  background-image: linear-gradient(#494850, #313035);
 }
 body {
   margin: 0;
